@@ -2,17 +2,17 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
-        <h1><%: Title %>.</h1>
+        <h1><%: Title %></h1>
     </hgroup>
     <section id="loginForm">
-        <h2>Utilice una cuenta local para iniciar sesión, peritos</h2>
+        <h2>Utilice una cuenta local, de administrador:</h2>
         <asp:Login ID="Login1" runat="server" ViewStateMode="Disabled" RenderOuterTable="false">
             <LayoutTemplate>
                 <p class="validation-summary-errors">
                     <asp:Literal runat="server" ID="FailureText" />
                 </p>
                 <fieldset>
-                    <legend>Formulario de inicio de sesión</legend>
+                    <legend>Inicio de administrador</legend>
                     <ol>
                         <li>
                             <asp:Label ID="Label1" runat="server" AssociatedControlID="UserName">Nombre de usuario</asp:Label>
@@ -25,8 +25,7 @@
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Password" CssClass="field-validation-error" ErrorMessage="El campo de contraseña es obligatorio." />
                         </li>
                         <li>
-                            <asp:CheckBox runat="server" ID="RememberMe" />
-                            <asp:Label ID="Label3" runat="server" AssociatedControlID="RememberMe" CssClass="checkbox">¿Recordar cuenta?</asp:Label>
+                            <li><a id="A2" runat="server" href="~/Usuarios/RegistroUsuario.aspx">Registrarse como Administrador</a></li>
                         </li>
                     </ol>
                     <asp:Button ID="Button1" runat="server" CommandName="Login" Text="Iniciar sesión" OnClick="Button1_Click1"/>

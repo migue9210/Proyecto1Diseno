@@ -1,11 +1,12 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Prueba_1.SiteMaster" %>
+<%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <!DOCTYPE html>
 <html lang="es">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
-    <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
+    <title><%: Page.Title %> - TuristearCR</title>
     <asp:PlaceHolder runat="server">     
           <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>  
@@ -13,6 +14,11 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <style type="text/css">
+        .auto-style2 {
+            font-size: medium;
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
@@ -39,37 +45,37 @@
     </asp:ScriptManager>
     <header>
         <div class="content-wrapper">
-             <div class="float-left">
+              <div class="float-left">
                 <p class="site-title">
-                    Disfruta de las maravillas 
+                    Disfruta de las maravillas... 
                     </p>
-                <p class="site-title">
-                    del país, y del mundo </p>
             </div>
             <div class="float-right">
                 <section id="login">
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul>
-                                <li><a id="loginLink" runat="server" href="~/Account/Login">Iniciar sesión</a></li>
+                                <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
                                 <li><a id="A2" runat="server" href="Contact.aspx">Contactanos:</a></li>
                                 <li><a id="A7" runat="server" href="~/Administrador/Login.aspx">Iniciar como Administrador</a></li>
                            </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
                             <p>
-                                Hello, <a runat="server" class="username" href="~/Account/Manage" title="Manage your account">
-                                    <asp:LoginName runat="server" CssClass="username" /></a>!
+                                Bienvenido, <a runat="server" class="username" href="~/Account/Manage" title="Manage your account">
+                                    <asp:LoginName runat="server" CssClass="username" /></a>
                                 <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesión" LogoutPageUrl="~/" />
-                            </p>
+                                <li><a id="A2" runat="server" href="Contact.aspx">Contactanos</a></li>
+                                <li><a id="A7" runat="server" href="~/Administrador/Login.aspx">Administrador</a></li>
+                           </p>
                         </LoggedInTemplate>
                     </asp:LoginView>
                 </section>
                 <nav>
-                    <ul id="menu">
+                    <ul id="menu" class="auto-style2">
                         <li><a id="A1" runat="server" href="~/">Inicio</a></li>
                         <li><a id="A3" runat="server" href="~/InfoLugares.aspx">Lugares</a>
-                        <li><a id="A4" runat="server" href="Contact.aspx">Voluntariado</a>
+                        <li><a id="A4" runat="server" href="~/Voluntariado.aspx">Voluntariado</a>
                     </ul>
                 </nav>
             </div>

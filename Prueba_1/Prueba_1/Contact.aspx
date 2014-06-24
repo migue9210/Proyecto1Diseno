@@ -2,7 +2,7 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
-        <h1><%: Title %>Contactenos.</h1>
+        <h1><%: Title %></h1>
     </hgroup>
 
     <section class="contact">
@@ -34,10 +34,4 @@
         <p>
             Tecnologico de Costa Rica, Sede Central Cartago,Costa Rica</p>
     </section>
-
-    <ul>
-            <li><a id="A1" runat="server" href="~/">Home</a></li>
-            <li><a id="A2" runat="server" href="~/About">About</a></li>
-            <li><a id="A3" runat="server" href="~/Contact">Contact</a></li>
-        </ul>
 </asp:Content>

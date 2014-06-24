@@ -10,23 +10,23 @@
                         <ol>
                             <li>
                                 <asp:Label ID="Label1" runat="server" AssociatedControlID="Name">Nombre:</asp:Label>
-                                <asp:TextBox runat="server" ID="Name"  />
+                                <asp:TextBox runat="server" ID="Name" Width="318px"  />
                             </li>
                             <li>
                                 <asp:Label ID="Label5" runat="server" AssociatedControlID="Pais">Pais:</asp:Label>
-                                <asp:TextBox runat="server" ID="Pais"  />
+                                <asp:TextBox runat="server" ID="Pais" Width="318px" />
                             </li>
                             <li>
                                 <asp:Label ID="Label6" runat="server" AssociatedControlID="Descripcion">Descripcion:</asp:Label>
-                                <asp:TextBox runat="server" ID="Descripcion"  />
+                                <asp:TextBox runat="server" ID="Descripcion" Width="318px" />
                             </li>
                             <li>
                                 <asp:Label ID="Label2" runat="server" AssociatedControlID="Cali">Calificacion:</asp:Label>
-                                <asp:TextBox runat="server" ID="Cali" />
+                                <asp:TextBox runat="server" ID="Cali" Width="318px" />
                             </li>
                             <li>
                                 <asp:Label ID="Label8" runat="server" AssociatedControlID="Url">URL:</asp:Label>
-                                <asp:TextBox runat="server" ID="url" TextMode="Url"  />
+                                <asp:TextBox runat="server" ID="url" TextMode="Url" Width="318px" />
                             </li>
                         </ol>
                         <asp:Button ID="ButtonRegistrar" runat="server" CommandName="MoveNext" Text="Registrarse" OnClick="ButtonRegistrar_Click" />

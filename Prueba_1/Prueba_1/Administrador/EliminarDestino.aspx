@@ -10,7 +10,7 @@
                 <ol>
                     <li>
                         <asp:Label ID="Label1" runat="server">Destino:</asp:Label>
-                        <asp:ListBox ID="ListBoxDestino" runat="server" Height="28px" Width="309px" DataSourceID="SqlDataSource2" DataTextField="NOMBRE" DataValueField="ID_DESTINO"></asp:ListBox>                                
+                        <asp:ListBox ID="ListBoxDestino" runat="server" Height="24px" Width="309px" DataSourceID="SqlDataSource2" DataTextField="NOMBRE" DataValueField="ID_DESTINO" style="font-size: medium"></asp:ListBox>                                
                         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TuristearConnectionString %>" SelectCommand="SELECT [NOMBRE], [ID_DESTINO] FROM [DESTINO]"></asp:SqlDataSource>
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
                    </li>

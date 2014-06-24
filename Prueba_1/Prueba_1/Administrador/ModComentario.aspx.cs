@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -22,6 +20,7 @@ namespace Prueba_1.Administrador
 
         }
 
+        //Este metodo modifica los comentarios de los usuarios
         protected void ButtonRegistrar_Click(object sender, EventArgs e)
         {
             using (SqlCommand reserva = new SqlCommand("ModComentario", Conexion_SQL.getConexion()))

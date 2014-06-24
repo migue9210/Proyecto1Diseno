@@ -7,7 +7,7 @@
                     <ol>
                         <li>
                             <asp:Label ID="Label1" runat="server">Ubicación:</asp:Label>
-                            <asp:ListBox ID="ListBoxDestino" runat="server" Height="28px" Width="309px" DataSourceID="SqlDataSource3" DataTextField="NOMBRE_PAIS" DataValueField="ID_PAIS"></asp:ListBox>                                
+                            <asp:ListBox ID="ListBoxDestino" runat="server" Height="25px" Width="309px" DataSourceID="SqlDataSource3" DataTextField="NOMBRE_PAIS" DataValueField="ID_PAIS" style="font-size: medium"></asp:ListBox>                                
                             <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:TuristearConnectionString2 %>" SelectCommand="SELECT [ID_PAIS], [NOMBRE_PAIS] FROM [PAIS]"></asp:SqlDataSource>
                         </li>
                     </ol>

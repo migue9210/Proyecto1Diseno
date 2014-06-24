@@ -9,11 +9,7 @@
         <p>
             &nbsp;</p>
         <p>
-            <img alt="Tortuguero Canal" src="http://www.govisitcostarica.co.cr/images/photos/mlg-Tortuguero-Canal.jpg" /></p>
-        <p>
-            <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Registrarse</asp:HyperLink>
-            si no tiene una cuenta.
-        </p>
+            <img alt="Tortuguero Canal" src="http://www.govisitcostarica.co.cr/images/photos/mlg-Tortuguero-Canal.jpg" style="height: 299px; width: 432px" /></p>
     </section>
 
     <section id="socialLoginForm">

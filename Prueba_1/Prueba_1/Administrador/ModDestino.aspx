@@ -10,13 +10,13 @@
                         <ol>
                             <li>
                                 <asp:Label ID="Label1" runat="server">Destino:</asp:Label>
-                                <asp:ListBox ID="ListBoxDestino" runat="server" Height="28px" Width="309px" DataSourceID="SqlDataSource2" DataTextField="NOMBRE" DataValueField="ID_DESTINO" style="font-size: 1em"></asp:ListBox>                                
+                                <asp:ListBox ID="ListBoxDestino" runat="server" Height="28px" Width="309px" DataSourceID="SqlDataSource2" DataTextField="NOMBRE" DataValueField="ID_DESTINO" style="font-size: medium"></asp:ListBox>                                
                                 <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TuristearConnectionString %>" SelectCommand="SELECT [NOMBRE], [ID_DESTINO] FROM [DESTINO]"></asp:SqlDataSource>
                                 <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
                            </li>
                             <li>
                                 <asp:Label ID="Label6" runat="server" AssociatedControlID="Descripcion">Descripcion Nueva:</asp:Label>
-                                <asp:TextBox runat="server" ID="Descripcion"  />
+                                <asp:TextBox runat="server" ID="Descripcion" Height="71px" Width="337px"  />
                             </li>
                         </ol>
                         <asp:Button ID="ButtonRegistrar" runat="server" CommandName="MoveNext" Text="Modificar" OnClick="ButtonRegistrar_Click"/>

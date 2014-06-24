@@ -9,18 +9,18 @@
             <legend>Formulario</legend>
                 <ol>
                     <li>
-                        <asp:Label ID="Label1" runat="server">Destino:</asp:Label>
-                        <asp:ListBox ID="ListBoxDestino" runat="server" Height="28px" Width="309px" DataSourceID="SqlDataSource2" DataTextField="NOMBRE" DataValueField="ID_DESTINO" style="font-size: 1em"></asp:ListBox>                                
+                        <asp:Label ID="Label1" runat="server" AssociatedControlID="Descripcion">Destino:</asp:Label>
+                        <asp:ListBox ID="ListBoxDestino" runat="server" Height="28px" Width="321px" DataSourceID="SqlDataSource2" DataTextField="NOMBRE" DataValueField="ID_DESTINO" style="font-size: medium"></asp:ListBox>                                
                         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TuristearConnectionString %>" SelectCommand="SELECT [NOMBRE], [ID_DESTINO] FROM [DESTINO]"></asp:SqlDataSource>
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
                     </li>
                     <li>
                         <asp:Label ID="Label6" runat="server" AssociatedControlID="Descripcion">Comentario:</asp:Label>
-                        <asp:TextBox runat="server" ID="Descripcion" Height="79px" Width="391px"  />
+                        <asp:TextBox runat="server" ID="Descripcion" Height="79px" Width="321px"  />
                     </li>
                     <li>
                         <asp:Label ID="Label7" runat="server" AssociatedControlID="Descripcion">Calificación:</asp:Label>
-                        <asp:ListBox ID="ListBoxHoras" runat="server" Height="24px" Width="309px">
+                        <asp:ListBox ID="ListBoxHoras" runat="server" Height="24px" Width="321px" style="font-size: medium">
                             <asp:ListItem>1</asp:ListItem>
                             <asp:ListItem>2</asp:ListItem>
                             <asp:ListItem>3</asp:ListItem>

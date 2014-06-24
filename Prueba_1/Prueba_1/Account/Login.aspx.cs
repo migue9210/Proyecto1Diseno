@@ -9,6 +9,7 @@ namespace Prueba_1.Account
 {
     public partial class Login : Page
     {
+     //Este metodo nos permite verificar si las cuentas son compatibles con las que estan en la BD
         protected void Page_Load(object sender, EventArgs e)
         {
             RegisterHyperLink.NavigateUrl = "Register";

@@ -8,12 +8,8 @@
         <p>
             &nbsp;</p>
         <p>
-            <img src="http://www.remax-oceansurf-cr.com/sites/www.remax-oceansurf-cr.com/files/images/tamarindo-beach.jpg" style="height: 350px; width: 558px" /></p>
-        <p>
-            <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Registrarse</asp:HyperLink>
-            si no tiene una cuenta.
-        </p>
-    </section>
+            <img src="http://www.remax-oceansurf-cr.com/sites/www.remax-oceansurf-cr.com/files/images/tamarindo-beach.jpg" style="height: 243px; width: 381px" /></p>
+     </section>
 
     <section id="socialLoginForm">
         <h2>&nbsp;</h2>

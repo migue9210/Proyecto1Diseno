@@ -4,22 +4,22 @@
     <hgroup class="title">
         <h1><%: Title %>Cuenta&nbsp; de Administrador</h1>
     </hgroup>
-<asp:Button ID="ButtonRegistrar" runat="server" Text="Registrar Destino" OnClick="ButtonRegistrar_Click" />
+<asp:Button ID="ButtonRegistrar" runat="server" Text="Registrar Destino" OnClick="ButtonRegistrar_Click" Width="222px" />
     <br />
     <br />
-<asp:Button ID="ButtonModificar" runat="server" CommandName="MoveNext" Text="Modificar Destino" OnClick="ButtonModificar_Click" />
+<asp:Button ID="ButtonModificar" runat="server" CommandName="MoveNext" Text="Modificar Destino" OnClick="ButtonModificar_Click" Width="222px" />
     <br />
     <br />
-<asp:Button ID="ButtonEliminar" runat="server" CommandName="MoveNext" Text="Eliminar Destino" OnClick="ButtonEliminar_Click"  />
+<asp:Button ID="ButtonEliminar" runat="server" CommandName="MoveNext" Text="Eliminar Destino" OnClick="ButtonEliminar_Click" Width="222px" />
     <br />
     <br />
-<asp:Button ID="ButtonRegis_Voluntario" runat="server" CommandName="MoveNext" Text="Registrar Voluntariado" OnClick="ButtonRegis_Voluntario_Click"  />
+<asp:Button ID="ButtonRegis_Voluntario" runat="server" CommandName="MoveNext" Text="Registrar Voluntariado" OnClick="ButtonRegis_Voluntario_Click" Width="222px" />
     <br />
     <br />
-<asp:Button ID="Button1" runat="server" Text="Modificar Comentario" OnClick="Button1_Click"/>
+<asp:Button ID="Button1" runat="server" Text="Modificar Comentario" OnClick="Button1_Click" Width="222px"/>
     <br />
     <br />
-<asp:Button ID="Button2" runat="server" CommandName="MoveNext" Text="Eliminar Comentario"/>
+<asp:Button ID="Button2" runat="server" CommandName="MoveNext" Text="Eliminar Comentario" Width="222px"/>
 
 
 

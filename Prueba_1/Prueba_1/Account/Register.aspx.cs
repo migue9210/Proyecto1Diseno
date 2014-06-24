@@ -18,6 +18,7 @@ namespace Prueba_1.Account
 
         protected void RegisterUser_CreatedUser(object sender, EventArgs e)
         {
+            //En esta clase se creata la cuenta de usuario
             FormsAuthentication.SetAuthCookie(RegisterUser.UserName, createPersistentCookie: false);
 
             string continueUrl = RegisterUser.ContinueDestinationPageUrl;

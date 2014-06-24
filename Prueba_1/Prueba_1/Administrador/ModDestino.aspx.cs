@@ -19,6 +19,7 @@ namespace Prueba_1.Administrador
 
         }
 
+        // Este metodo modifica el destino
         protected void ButtonRegistrar_Click(object sender, EventArgs e)
         {
         using (SqlCommand reserva = new SqlCommand("MoDestino", Conexion_SQL.getConexion()))

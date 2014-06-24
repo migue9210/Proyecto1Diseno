@@ -21,6 +21,7 @@ namespace Prueba_1.Administrador
 
         }
 
+        //Esta clase me permite eliminar los comentarios para un determinado destino
         protected void ButtonRegistrar_Click(object sender, EventArgs e)
         {
             using (SqlCommand reserva = new SqlCommand("dbo.EliminarComentario", Conexion_SQL.getConexion()))

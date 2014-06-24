@@ -10,17 +10,17 @@
                         <ol>
                             <li>
                                 <asp:Label ID="Label1" runat="server" AssociatedControlID="Descripcion">Destino:</asp:Label>
-                                <asp:ListBox ID="ListBoxDestino" runat="server" Height="28px" Width="309px" DataSourceID="SqlDataSource1" DataTextField="NOMBRE" DataValueField="ID_DESTINO"></asp:ListBox>
+                                <asp:ListBox ID="ListBoxDestino" runat="server" Height="28px" Width="318px" DataSourceID="SqlDataSource1" DataTextField="NOMBRE" DataValueField="ID_DESTINO"></asp:ListBox>
                                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TURISTEAR_CRConnectionString %>" SelectCommand="SELECT [ID_DESTINO], [NOMBRE] FROM [DESTINO]"></asp:SqlDataSource>
                             </li>
                             <li>
                                 <asp:Label ID="Label5" runat="server" AssociatedControlID="Descripcion">Tipo de voluntariado:</asp:Label>
-                                <asp:ListBox ID="ListBoxTipo" runat="server" Height="28px" Width="309px" DataSourceID="SqlDataSource2" DataTextField="NOMBRE" DataValueField="ID_TIPO_VOLUNTARIADO"></asp:ListBox>
+                                <asp:ListBox ID="ListBoxTipo" runat="server" Height="28px" Width="318px" DataSourceID="SqlDataSource2" DataTextField="NOMBRE" DataValueField="ID_TIPO_VOLUNTARIADO"></asp:ListBox>
                                 <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TURISTEAR_CRConnectionString %>" SelectCommand="SELECT [ID_TIPO_VOLUNTARIADO], [NOMBRE] FROM [TIPO_VOLUNTARIADO]"></asp:SqlDataSource>
                             </li>
                             <li>
                                 <asp:Label ID="Label7" runat="server" AssociatedControlID="Descripcion">Horas:</asp:Label>
-                                <asp:ListBox ID="ListBoxHoras" runat="server" Height="24px" Width="309px">
+                                <asp:ListBox ID="ListBoxHoras" runat="server" Height="28px" Width="318px">
                                     <asp:ListItem>4</asp:ListItem>
                                     <asp:ListItem>5</asp:ListItem>
                                     <asp:ListItem>6</asp:ListItem>
@@ -32,19 +32,19 @@
                             </li>
                             <li>
                                 <asp:Label ID="Label2" runat="server" AssociatedControlID="Descripcion">Descripcion:</asp:Label>
-                                <asp:TextBox runat="server" ID="Descripcion" />
+                                <asp:TextBox runat="server" ID="Descripcion" Height="28px" Width="318px"/>
                             </li>
                             <li>
                                 <asp:Label ID="Label8" runat="server" AssociatedControlID="Perfil">Perfil del voluntariado:</asp:Label>
-                                <asp:TextBox runat="server" ID="Perfil"  />
+                                <asp:TextBox runat="server" ID="Perfil" Height="28px" Width="318px" />
                             </li>
                               <li>
                                 <asp:Label ID="Label3" runat="server" AssociatedControlID="Vacantes">Vacantes:</asp:Label>
-                                <asp:TextBox runat="server" ID="Vacantes" TexMode="Number" />
+                                <asp:TextBox runat="server" ID="Vacantes" TexMode="Number" Height="28px" Width="318px" />
                             </li>
                             <li>
                                 <asp:Label ID="Label4" runat="server" AssociatedControlID="Encargado">Encargado:</asp:Label>
-                                <asp:TextBox runat="server" ID="Encargado"/>
+                                <asp:TextBox runat="server" ID="Encargado" Height="28px" Width="318px"/>
                             </li>
                         </ol>
                         <asp:Button ID="ButtonRegistrar" runat="server" CommandName="MoveNext" Text="Registrarse" OnClick="ButtonRegistrar_Click"/>

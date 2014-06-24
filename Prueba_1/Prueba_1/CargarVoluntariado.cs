@@ -11,17 +11,15 @@ using Prueba_1.Usuarios;
 
 namespace Prueba_1
 {
-    public class CargarDestinos
+    public class CargarVoluntariado
     {
         public DataSet CargaGridPais(int pais)
         {
             //Este funcion hace un llenado del data grid view
-            SqlDataAdapter da = new SqlDataAdapter("CargarDestinosXpais", Conexion_SQL.getConexion());
+            SqlDataAdapter da = new SqlDataAdapter("CargarVoluntariado", Conexion_SQL.getConexion());
             da.SelectCommand.CommandTimeout = 0;
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
-           // da.SelectCommand.Parameters.Add("@idCiudad", SqlDbType.Int).Value = ciudad;
-           // da.SelectCommand.Parameters.Add("@idProvincia", SqlDbType.Int).Value = provincia;
-            da.SelectCommand.Parameters.Add("@idPais", SqlDbType.Int).Value = pais;
+            da.SelectCommand.Parameters.Add("@ID_DESTINO", SqlDbType.Int).Value = pais;
             DataSet ds = new DataSet();
             try
             {
@@ -33,11 +31,6 @@ namespace Prueba_1
             {
                 throw ex;
             }
-        }
-
-        internal DataSet CargaGridVoluntariado(int DESTINO)
-        {
-            throw new NotImplementedException();
         }
     }
 }

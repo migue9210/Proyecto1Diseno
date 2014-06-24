@@ -9,11 +9,7 @@
         <p>
             &nbsp;</p>
         <p>
-            <img alt="Monteverde Cloud Forest in the clouds" src="http://www.govisitcostarica.co.cr/images/photos/mlg-perfect-cloudforest-monteverde.jpg" style="width: 536px" /></p>
-        <p>
-            <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Registrarse</asp:HyperLink>
-            si no tiene una cuenta.
-        </p>
+            <img alt="Monteverde Cloud Forest in the clouds" src="http://www.govisitcostarica.co.cr/images/photos/mlg-perfect-cloudforest-monteverde.jpg" style="width: 379px; height: 131px;" /></p>
     </section>
 
     <section id="socialLoginForm">

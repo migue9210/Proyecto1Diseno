@@ -13,7 +13,7 @@ namespace Prueba_1.Administrador
         {
 
         }
-
+        // Metodos que redireccionan al usuario para sus especialidades
         protected void ButtonRegistrar_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Administrador/RegistroDestino.aspx");

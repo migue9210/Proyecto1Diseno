@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,7 +10,7 @@ using System.Data.SqlClient;
 
 namespace Prueba_1
 {
-    public partial class InfoLugares : System.Web.UI.Page
+    public partial class Voluntariado : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -20,12 +18,12 @@ namespace Prueba_1
         }
 
         protected void Button1_Click(object sender, EventArgs e)
-        //Este metodo nos permite cargar el grid, de los lugares para visitar
         {
             try
             {
-                CargarDestinos oCargaGrid = new CargarDestinos();
-                int pais = Convert.ToInt32(ListBoxDestino.SelectedValue);
+                //Esta funcion, hace un llenado del grid
+                CargarVoluntariado oCargaGrid = new CargarVoluntariado();
+                int pais = Convert.ToInt32(ListBox1.SelectedValue);
                 DataSet ds = oCargaGrid.CargaGridPais(pais);
                 GridView1.DataSource = ds;
                 GridView1.DataBind();
@@ -37,9 +35,10 @@ namespace Prueba_1
             }
         }
 
+        
         protected void Button2_Click(object sender, System.EventArgs e)
         {
-            Response.Redirect("~/Comentarios/InsertarConsejo.aspx");
+            Response.Redirect("~/Inscripcion.aspx");
         }
     }
 }

@@ -10,31 +10,31 @@
                         <ol>
                             <li>
                                 <asp:Label ID="Label1" runat="server" AssociatedControlID="Name">Nombre:</asp:Label>
-                                <asp:TextBox runat="server" ID="Name"  />
+                                <asp:TextBox runat="server" ID="Name" Width="322px"  />
                             </li>
                             <li>
                                 <asp:Label ID="Label5" runat="server" AssociatedControlID="Apellido1">Primer Apellido</asp:Label>
-                                <asp:TextBox runat="server" ID="Apellido1"  />
+                                <asp:TextBox runat="server" ID="Apellido1" Width="322px" />
                             </li>
                             <li>
                                 <asp:Label ID="Label6" runat="server" AssociatedControlID="Apellido2">Segundo Apellido</asp:Label>
-                                <asp:TextBox runat="server" ID="Apellido2"  />
+                                <asp:TextBox runat="server" ID="Apellido2" Width="322px" />
                             </li>
                             <li>
                                 <asp:Label ID="Label2" runat="server" AssociatedControlID="Email">Dirección de correo electrónico</asp:Label>
-                                <asp:TextBox runat="server" ID="Email" TextMode="Email" />
+                                <asp:TextBox runat="server" ID="Email" TextMode="Email" Width="322px" />
                             </li>
                             <li>
                                 <asp:Label ID="Label7" runat="server" AssociatedControlID="Edad">Edad</asp:Label>
-                                <asp:TextBox runat="server" ID="Edad"/>
+                                <asp:TextBox runat="server" ID="Edad" Width="322px"/>
                             </li>
                             <li>
                                 <asp:Label ID="Label8" runat="server" AssociatedControlID="Phone">Telefono</asp:Label>
-                                <asp:TextBox runat="server" ID="Phone" TextMode="Phone"  />
+                                <asp:TextBox runat="server" ID="Phone" TextMode="Phone" Width="322px" />
                             </li>
                             <li>
                                 <asp:Label ID="Label3" runat="server" AssociatedControlID="Password">Contraseña</asp:Label>
-                                <asp:TextBox runat="server" ID="Password" TextMode="Password" />
+                                <asp:TextBox runat="server" ID="Password" TextMode="Password" Width="322px" />
                             </li>
                         </ol>
                         <asp:Button ID="ButtonRegistrar" runat="server" CommandName="MoveNext" Text="Registrarse" OnClick="ButtonRegistrar_Click" />

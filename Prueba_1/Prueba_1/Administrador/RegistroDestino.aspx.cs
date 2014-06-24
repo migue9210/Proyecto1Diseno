@@ -19,6 +19,7 @@ namespace Prueba_1.Administrador
 
         }
 
+        // Este metodo registra el destino
         protected void ButtonRegistrar_Click(object sender, EventArgs e)
         {
 {
