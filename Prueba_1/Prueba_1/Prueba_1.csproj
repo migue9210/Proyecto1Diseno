@@ -131,12 +131,15 @@
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Administrador\EliminarComentario.aspx" />
     <Content Include="Administrador\EliminarDestino.aspx" />
     <Content Include="Administrador\Login.aspx" />
     <Content Include="Administrador\Menu_.aspx" />
+    <Content Include="Administrador\ModComentario.aspx" />
     <Content Include="Administrador\ModDestino.aspx" />
     <Content Include="Administrador\RegistroDestino.aspx" />
     <Content Include="Administrador\ResgistoVoluntariado.aspx" />
+    <Content Include="Comentarios\InsertarConsejo.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -211,6 +214,8 @@
     <Content Include="Images\orderedList7.png" />
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
+    <Content Include="InfoLugares.aspx" />
+    <Content Include="Lugares.aspx" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Turistear - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\Turistear - Web Deploy.pubxml" />
@@ -252,6 +257,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador\EliminarComentario.aspx.cs">
+      <DependentUpon>EliminarComentario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\EliminarComentario.aspx.designer.cs">
+      <DependentUpon>EliminarComentario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Administrador\EliminarDestino.aspx.cs">
       <DependentUpon>EliminarDestino.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -272,6 +284,13 @@
     </Compile>
     <Compile Include="Administrador\Menu_.aspx.designer.cs">
       <DependentUpon>Menu_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ModComentario.aspx.cs">
+      <DependentUpon>ModComentario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\ModComentario.aspx.designer.cs">
+      <DependentUpon>ModComentario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administrador\ModDestino.aspx.cs">
       <DependentUpon>ModDestino.aspx</DependentUpon>
@@ -339,6 +358,14 @@
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="CargarDestinos.cs" />
+    <Compile Include="Comentarios\InsertarConsejo.aspx.cs">
+      <DependentUpon>InsertarConsejo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comentarios\InsertarConsejo.aspx.designer.cs">
+      <DependentUpon>InsertarConsejo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -390,6 +417,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="InfoLugares.aspx.cs">
+      <DependentUpon>InfoLugares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InfoLugares.aspx.designer.cs">
+      <DependentUpon>InfoLugares.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lugares.aspx.cs">
+      <DependentUpon>Lugares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lugares.aspx.designer.cs">
+      <DependentUpon>Lugares.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

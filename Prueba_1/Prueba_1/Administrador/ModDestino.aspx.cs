@@ -21,15 +21,14 @@ namespace Prueba_1.Administrador
 
         protected void ButtonRegistrar_Click(object sender, EventArgs e)
         {
-
-                using (SqlCommand reserva = new SqlCommand("ModDestino", Conexion_SQL.getConexion()))
-                {
-                    reserva.CommandType = CommandType.StoredProcedure;
-                    reserva.Parameters.Add("ID_DESTINO", SqlDbType.Int).Value = ListBoxDestino.SelectedValue;
-                    reserva.Parameters.Add("Descripcion", SqlDbType.NVarChar).Value = Descripcion.Text;
-                    reserva.ExecuteNonQuery();
-                    Response.Redirect("~/Administrador/Menu_.aspx");
-                }
-            }
+        using (SqlCommand reserva = new SqlCommand("MoDestino", Conexion_SQL.getConexion()))
+        {
+            reserva.CommandType = CommandType.StoredProcedure;
+            reserva.Parameters.Add("ID_DESTINO", SqlDbType.Int).Value = ListBoxDestino.SelectedValue;
+            reserva.Parameters.Add("Descripcion", SqlDbType.NVarChar).Value = Descripcion.Text;
+            reserva.ExecuteNonQuery();
+            Response.Redirect("~/Administrador/Menu_.aspx");
+        }
+        }
     }
 }

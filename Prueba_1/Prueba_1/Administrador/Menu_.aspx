@@ -14,4 +14,13 @@
     <br />
     <br />
 <asp:Button ID="ButtonRegis_Voluntario" runat="server" CommandName="MoveNext" Text="Registrar Voluntariado" OnClick="ButtonRegis_Voluntario_Click"  />
+    <br />
+    <br />
+<asp:Button ID="Button1" runat="server" Text="Modificar Comentario" OnClick="Button1_Click"/>
+    <br />
+    <br />
+<asp:Button ID="Button2" runat="server" CommandName="MoveNext" Text="Eliminar Comentario"/>
+
+
+
 </asp:Content> 

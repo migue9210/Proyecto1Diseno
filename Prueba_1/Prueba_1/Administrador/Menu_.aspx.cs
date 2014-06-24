@@ -33,5 +33,10 @@ namespace Prueba_1.Administrador
         {
             Response.Redirect("~/Administrador/ModDestino.aspx");
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

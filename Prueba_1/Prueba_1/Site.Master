@@ -52,7 +52,9 @@
                         <AnonymousTemplate>
                             <ul>
                                 <li><a id="loginLink" runat="server" href="~/Account/Login">Iniciar sesión</a></li>
-                            </ul>
+                                <li><a id="A2" runat="server" href="Contact.aspx">Contactanos:</a></li>
+                                <li><a id="A7" runat="server" href="~/Administrador/Login.aspx">Iniciar como Administrador</a></li>
+                           </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
                             <p>
@@ -66,10 +68,8 @@
                 <nav>
                     <ul id="menu">
                         <li><a id="A1" runat="server" href="~/">Inicio</a></li>
-                        <li><a id="A2" runat="server" href="~/About.aspx">Acerca de</a></li>
-                        <li><a id="A3" runat="server" href="~/Lugares.aspx">Lugares</a>
+                        <li><a id="A3" runat="server" href="~/InfoLugares.aspx">Lugares</a>
                         <li><a id="A4" runat="server" href="Contact.aspx">Voluntariado</a>
-                        <li><a id="A5" runat="server" href="~/Administrador/Login.aspx">Admin</a>
                     </ul>
                 </nav>
             </div>
